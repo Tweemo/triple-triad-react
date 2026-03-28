@@ -1,0 +1,1102 @@
+[
+  {
+    "file": "assets/cards/1.png",
+    "level": 1,
+    "name": "geezard",
+    "top": 1,
+    "right": 4,
+    "bottom": 1,
+    "left": 5,
+    "element": null
+  },
+  {
+    "file": "assets/cards/2.png",
+    "level": 1,
+    "name": "funguar",
+    "top": 5,
+    "right": 1,
+    "bottom": 1,
+    "left": 3,
+    "element": null
+  },
+  {
+    "file": "assets/cards/3.png",
+    "level": 1,
+    "name": "bite bug",
+    "top": 1,
+    "right": 3,
+    "bottom": 3,
+    "left": 5,
+    "element": null
+  },
+  {
+    "file": "assets/cards/4.png",
+    "level": 1,
+    "name": "red bat",
+    "top": 6,
+    "right": 1,
+    "bottom": 1,
+    "left": 2,
+    "element": null
+  },
+  {
+    "file": "assets/cards/5.png",
+    "level": 1,
+    "name": "blobra",
+    "top": 2,
+    "right": 3,
+    "bottom": 1,
+    "left": 5,
+    "element": null
+  },
+  {
+    "file": "assets/cards/6.png",
+    "level": 1,
+    "name": "gayla",
+    "top": 2,
+    "right": 1,
+    "bottom": 4,
+    "left": 4,
+    "element": "lightning"
+  },
+  {
+    "file": "assets/cards/7.png",
+    "level": 1,
+    "name": "gesper",
+    "top": 1,
+    "right": 5,
+    "bottom": 4,
+    "left": 1,
+    "element": null
+  },
+  {
+    "file": "assets/cards/8.png",
+    "level": 1,
+    "name": "fastitocalon-f",
+    "top": 3,
+    "right": 5,
+    "bottom": 2,
+    "left": 1,
+    "element": "earth"
+  },
+  {
+    "file": "assets/cards/9.png",
+    "level": 1,
+    "name": "blood soul",
+    "top": 2,
+    "right": 1,
+    "bottom": 6,
+    "left": 1,
+    "element": null
+  },
+  {
+    "file": "assets/cards/10.png",
+    "level": 1,
+    "name": "caterchipillar",
+    "top": 4,
+    "right": 2,
+    "bottom": 4,
+    "left": 3,
+    "element": null
+  },
+  {
+    "file": "assets/cards/11.png",
+    "level": 1,
+    "name": "cockatrice",
+    "top": 2,
+    "right": 1,
+    "bottom": 2,
+    "left": 6,
+    "element": "lightning"
+  },
+  {
+    "file": "assets/cards/12.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/13.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/14.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/15.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/16.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/17.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/18.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/19.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/20.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/21.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/22.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/23.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/24.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/25.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/26.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/27.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/28.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/29.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/30.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/31.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/32.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/33.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/34.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/35.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/36.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/37.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/38.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/39.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/40.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/41.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/42.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/43.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/44.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/45.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/46.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/47.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/48.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/49.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/50.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/51.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/52.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/53.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/54.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/55.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/56.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/57.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/58.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/59.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/60.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/61.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/62.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/63.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/64.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/65.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/66.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/67.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/68.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/69.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/70.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/71.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/72.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/73.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/74.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/75.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/76.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/77.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/78.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/79.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/80.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/81.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/82.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/83.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/84.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/85.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/86.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/87.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/88.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/89.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/90.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/91.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/92.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/93.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/94.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/95.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/96.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/97.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/98.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/99.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/100.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/101.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/102.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/103.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/104.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/105.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/106.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/107.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/108.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/109.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  },
+  {
+    "file": "assets/cards/110.png",
+    "level": 1,
+    "name": "",
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0,
+    "element": null
+  }
+]

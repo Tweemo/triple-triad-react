@@ -1,0 +1,38 @@
+.board {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  background: no-repeat url('/assets/bg-board.jpg');
+  background-size: cover;
+  /* background-position: center; */
+  justify-content: center;
+
+  width: 90%;
+  height: 80%;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  /* background: url('/assets/bg-board.jpg'); */
+}
+
+.cell {
+  border: 1px solid #ccc;
+  /* padding: 3rem; */
+  height: 200px;
+  width: 200px;
+}
+
+/* Todo sort out classnames, gradients are fine */
+.Opponent {
+  background: linear-gradient(180deg, #D6ACC2, #652F3B);
+}
+
+.Player {
+  background: linear-gradient(180deg, #B4CAE6, #384D80);
+}
