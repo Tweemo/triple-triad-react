@@ -1,0 +1,27 @@
+.hand {
+  transform: translateY(10%);
+  /* Height is all the cards stacked height
+  Todo this may change to be nicer for different screen sizes */
+  height: 720px;
+}
+
+.cards {
+  position: relative;
+}
+
+/* Todo sort out classnames, gradients are fine */
+.Opponent {
+  padding-left: 50px;
+}
+
+.Opponent .card {
+  background: linear-gradient(180deg, #D6ACC2, #652F3B);
+}
+
+.Player .card {
+  background: linear-gradient(180deg, #B4CAE6, #384D80);
+}
+
+.selected {
+  transform: translateX(-50px);
+}

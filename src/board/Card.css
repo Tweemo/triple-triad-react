@@ -1,0 +1,19 @@
+.card {
+  position: absolute;
+}
+
+.ranks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  top: 16px;
+  left: 16px;  
+}
+
+.top { grid-area: 1 / 2 / 2 / 3; }
+.left { grid-area: 2 / 1 / 3 / 2; }
+.right { grid-area: 2 / 3 / 3 / 4; }
+.bottom { grid-area: 3 / 2 / 4 / 3; }
