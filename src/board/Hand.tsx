@@ -1,5 +1,4 @@
 import Card from './Card'
-import { useState, useEffect, useRef } from 'react'
 import './Hand.css'
 import clsx from 'clsx'
 
@@ -18,32 +17,13 @@ function Hand({
   user,
   cards,
   turn,
+  selectedCardIndex,
 }: {
   user: string
   cards: CardProps[]
   turn: string
+  selectedCardIndex: number
 }) {
-  const [selectedCardIndex, setSelectedCardIndex] = useState(0)
-  const audioRef = useRef<HTMLAudioElement>(null)
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowUp') {
-        setSelectedCardIndex((prev) => Math.max(0, prev - 1))
-      } else if (e.key === 'ArrowDown') {
-        setSelectedCardIndex((prev) => Math.min(4, prev + 1))
-      }
-
-      // TODO delay in playing the sound, should play even if spammed
-      audioRef.current
-        ?.play()
-        .catch((e) => console.error('Audio play failed:', e))
-    }
-
-    window.addEventListener('keydown', handleKeyDown)
-    return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [selectedCardIndex])
-
   return (
     <div className={clsx('hand', user)}>
       <div className="cards">
@@ -52,11 +32,12 @@ function Hand({
             style={{ top: `${130 * i}px` }}
             selected={i === selectedCardIndex}
             card={card}
+            user={user}
+            turn={turn}
             key={card.name}
           />
         ))}
       </div>
-      <audio ref={audioRef} src="/assets/sounds/select.wav" />
     </div>
   )
 }

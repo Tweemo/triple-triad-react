@@ -6,17 +6,22 @@ import './Card.css'
 function Card({
   selected,
   card,
-  // user,
+  user,
+  turn,
   style,
 }: {
   selected: boolean
   card: CardProps
-  // user: string
+  user: string
+  turn: string
   style: React.CSSProperties
 }) {
   return (
-    <div className={clsx('card', selected && 'selected')} style={style}>
-      {selected && <Cursor />}
+    <div
+      className={clsx('card', selected && user === 'Player' && 'selected')}
+      style={style}
+    >
+      {selected && user === 'Player' && <Cursor />}
       <div className="ranks">
         <div className="top">{card.top}</div>
         <div className="left">{card.left}</div>
