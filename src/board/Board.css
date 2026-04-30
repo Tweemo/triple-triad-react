@@ -1,8 +1,7 @@
 .board {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  background: no-repeat url('/assets/bg-board.jpg');
-  background-size: cover;
+  background-color: #d18a15;
 }
 
 .field {
@@ -13,11 +12,12 @@
   justify-content: center;
   align-content: center;
   height: 100vh;
+  background: no-repeat url('/assets/bg-board.jpg');
+  background-position: center;
 }
 
 .cell {
   position: relative;
-  border: 1px solid #ccc;
   height: 200px;
   width: 200px;
 }
