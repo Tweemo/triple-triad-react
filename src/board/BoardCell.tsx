@@ -6,17 +6,11 @@ interface BoardCell {
   col: number
 }
 
-function BoardCell({
-  cell,
-  isPlacing,
-}: {
-  cell: BoardCell
-  isPlacing: boolean
-}) {
+function BoardCell({ cell, selected }: { cell: BoardCell; selected: boolean }) {
   return (
     <>
       <div className="cell" key={`${cell.row}-${cell.col}`}>
-        {isPlacing && <Cursor />}
+        {selected && <Cursor />}
         {cell.row},{cell.col}
       </div>
     </>

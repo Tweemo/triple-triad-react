@@ -4,6 +4,7 @@ import cards from './cards.json'
 import Field from './Field'
 import Hand from './Hand'
 import { getRandomNumbers } from './util'
+import useGameStateStore from '../store/gameState'
 
 const randomCards = getRandomNumbers()
 
@@ -31,10 +32,15 @@ const playerHand = {
 
 function Board() {
   const cells = []
-  const [turn, setTurn] = useState('Player')
-  const [selectedCardIndex, setSelectedCardIndex] = useState(0)
-  const [cardSelected, setCardSelected] = useState(false)
-  const [placingCard, setPlacingCard] = useState(false)
+  const [turn, setTurn] = useState('Opponent')
+
+  const {
+    selectedCardIndex,
+    isCardSelected,
+    setSelectedCardIndex,
+    setIsCardSelected,
+    selectedCell,
+  } = useGameStateStore()
 
   for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
@@ -46,25 +52,34 @@ function Board() {
 
   const handleKeyDown = (e: KeyboardEvent) => {
     // Handle navigating cards
-    if (e.key === 'ArrowUp' && !cardSelected) {
-      setSelectedCardIndex((prev) => Math.max(0, prev - 1))
-    } else if (e.key === 'ArrowDown' && !cardSelected) {
-      setSelectedCardIndex((prev) => Math.min(4, prev + 1))
+    if (e.key === 'ArrowUp' && !isCardSelected) {
+      setSelectedCardIndex(Math.max(0, selectedCardIndex - 1))
+    } else if (e.key === 'ArrowDown' && !isCardSelected) {
+      setSelectedCardIndex(Math.min(4, selectedCardIndex + 1))
     }
 
     // Handle selecting a card
     if (e.key === 'Enter') {
-      console.log(`Selected card: ${playerHand.cards[selectedCardIndex].name}`)
-      setCardSelected(true)
-
-      setPlacingCard(true)
+      if (!isCardSelected) {
+        console.log(
+          `Selected card: ${playerHand.cards[selectedCardIndex].name}`,
+        )
+        setIsCardSelected(true)
+      } else {
+        // @todo add logic to place the card here, for now just log the selected cell
+        console.log(
+          `I want to place this card on tile ${selectedCell?.row}, ${selectedCell?.col}`,
+        )
+        setIsCardSelected(false) // Deselect the card after "placing" it
+        // @todo, then it will become the opponent's turn, where a random card will be chosen and placed on a random tile
+      }
     }
 
-    if (e.key === 'Escape' && cardSelected) {
+    if (e.key === 'Escape' && isCardSelected) {
       console.log(
         `${playerHand.cards[selectedCardIndex].name} has been deselected`,
       )
-      setCardSelected(false)
+      setIsCardSelected(false)
     }
 
     // TODO delay in playing the sound, should play even if spammed
@@ -88,7 +103,7 @@ function Board() {
         turn={turn}
         selectedCardIndex={selectedCardIndex}
       />
-      <Field cells={cells} isPlacing={placingCard} />
+      <Field cells={cells} isPlacing={isCardSelected} />
       <Hand
         user={playerHand.user}
         cards={playerHand.cards}
