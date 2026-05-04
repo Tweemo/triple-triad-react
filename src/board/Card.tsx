@@ -1,6 +1,7 @@
 import Cursor from './Cursor'
 import clsx from 'clsx'
 import type { CardProps } from './Hand'
+import RankNumber from './RankNumber'
 import './Card.css'
 
 function Card({
@@ -23,10 +24,10 @@ function Card({
     >
       {selected && user === 'Player' && <Cursor />}
       <div className="ranks">
-        <div className="top">{card.top}</div>
-        <div className="left">{card.left}</div>
-        <div className="right">{card.right}</div>
-        <div className="bottom">{card.bottom}</div>
+        <RankNumber className="top" rank={card.top.toString()} />
+        <RankNumber className="left" rank={card.left.toString()} />
+        <RankNumber className="right" rank={card.right.toString()} />
+        <RankNumber className="bottom" rank={card.bottom.toString()} />
       </div>
       <img key={card.name} src={card.file} alt={`Card ${card.name}`} />
     </div>
