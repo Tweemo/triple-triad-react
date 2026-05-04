@@ -30,6 +30,8 @@ const playerHand = {
   ],
 }
 
+const INITIAL_SCORE = 5
+
 function Board() {
   const cells = []
   const [turn, setTurn] = useState('Opponent')
@@ -102,6 +104,7 @@ function Board() {
         cards={opponentHand.cards}
         turn={turn}
         selectedCardIndex={selectedCardIndex}
+        score={INITIAL_SCORE}
       />
       <Field cells={cells} isPlacing={isCardSelected} />
       <Hand
@@ -109,6 +112,7 @@ function Board() {
         cards={playerHand.cards}
         turn={turn}
         selectedCardIndex={selectedCardIndex}
+        score={INITIAL_SCORE}
       />
       <audio ref={audioRef} src="/assets/sounds/select.wav" />
     </div>

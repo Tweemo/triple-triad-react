@@ -42,7 +42,7 @@ function Field({ cells, isPlacing }: { cells: Cell[]; isPlacing: boolean }) {
   }
 
   return (
-    <div className="field" onKeyDown={handleKeyDown} tabIndex={0}>
+    <div className="field" onKeyDown={handleKeyDown}>
       {cells.map((cell) => {
         return (
           <BoardCell

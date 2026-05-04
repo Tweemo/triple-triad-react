@@ -3,6 +3,7 @@
   /* Height is all the cards stacked height
   Todo this may change to be nicer for different screen sizes */
   height: 720px;
+  width: 200px;
 }
 
 .cards {
@@ -10,9 +11,9 @@
 }
 
 /* Todo sort out classnames, gradients are fine */
-.Opponent {
+/* .Opponent {
   padding-left: 50px;
-}
+} */
 
 .Opponent .card {
   background: linear-gradient(180deg, #D6ACC2, #652F3B);
