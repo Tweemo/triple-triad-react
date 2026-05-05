@@ -22,3 +22,11 @@
   height: 200px;
   width: 200px;
 }
+
+.cell .card.field-placed img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+}

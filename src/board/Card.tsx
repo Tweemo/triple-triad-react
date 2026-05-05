@@ -8,21 +8,26 @@ function Card({
   selected,
   card,
   user,
-  turn,
   style,
+  className,
 }: {
   selected: boolean
   card: CardProps
   user: string
-  turn: string
   style: React.CSSProperties
+  className?: string
 }) {
   return (
     <div
-      className={clsx('card', selected && user === 'Player' && 'selected')}
+      className={clsx(
+        'card',
+        `${user}-card`,
+        className,
+        selected && user === 'player' && 'selected',
+      )}
       style={style}
     >
-      {selected && user === 'Player' && <Cursor />}
+      {selected && user === 'player' && <Cursor />}
       <div className="ranks">
         <RankNumber className="top" rank={card.top.toString()} />
         <RankNumber className="left" rank={card.left.toString()} />

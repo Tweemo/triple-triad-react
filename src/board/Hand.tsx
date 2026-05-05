@@ -1,7 +1,7 @@
 import Card from './Card'
-import './Hand.css'
 import clsx from 'clsx'
 import ScoreNumber from './ScoreNumber'
+import './Hand.css'
 
 export interface CardProps {
   file: string
@@ -17,13 +17,11 @@ export interface CardProps {
 function Hand({
   user,
   cards,
-  turn,
   selectedCardIndex,
   score,
 }: {
   user: string
   cards: CardProps[]
-  turn: string
   selectedCardIndex: number
   score: number
 }) {
@@ -37,7 +35,6 @@ function Hand({
               selected={i === selectedCardIndex}
               card={card}
               user={user}
-              turn={turn}
               key={card.name}
             />
           ))}

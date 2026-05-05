@@ -1,13 +1,22 @@
 import { useEffect } from 'react'
 import BoardCell from './BoardCell'
 import useGameStateStore from '../store/gameState'
+import type { CardProps } from './Hand'
 
 interface Cell {
   row: number
   col: number
 }
 
-function Field({ cells, isPlacing }: { cells: Cell[]; isPlacing: boolean }) {
+function Field({
+  cells,
+  isPlacing,
+  placements,
+}: {
+  cells: Cell[]
+  isPlacing: boolean
+  placements: Record<string, CardProps>
+}) {
   const { selectedCell, setSelectedCell } = useGameStateStore()
 
   useEffect(() => {
@@ -18,39 +27,17 @@ function Field({ cells, isPlacing }: { cells: Cell[]; isPlacing: boolean }) {
     }
   }, [isPlacing])
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    e.preventDefault()
-
-    if (!isPlacing) return
-
-    const { row, col } = selectedCell || { row: 1, col: 1 }
-
-    let newRow = row
-    let newCol = col
-
-    if (e.key === 'ArrowUp') {
-      newRow = Math.max(0, row - 1)
-    } else if (e.key === 'ArrowDown') {
-      newRow = Math.min(2, row + 1)
-    } else if (e.key === 'ArrowLeft') {
-      newCol = Math.max(0, col - 1)
-    } else if (e.key === 'ArrowRight') {
-      newCol = Math.min(2, col + 1)
-    }
-
-    setSelectedCell({ row: newRow, col: newCol })
-  }
-
   return (
-    <div className="field" onKeyDown={handleKeyDown}>
+    <div className="field">
       {cells.map((cell) => {
+        const key = `${cell.row}-${cell.col}`
         return (
           <BoardCell
-            cell={cell}
+            placedCard={placements[key]}
             selected={
               cell.row === selectedCell?.row && cell.col === selectedCell?.col
             }
-            key={`${cell.row}-${cell.col}`}
+            key={key}
           />
         )
       })}

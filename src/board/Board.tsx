@@ -1,15 +1,16 @@
 import { useState, useRef, useEffect } from 'react'
-import './Board.css'
 import cards from './cards.json'
 import Field from './Field'
 import Hand from './Hand'
+import type { CardProps } from './Hand'
 import { getRandomNumbers } from './util'
 import useGameStateStore from '../store/gameState'
+import './Board.css'
 
 const randomCards = getRandomNumbers()
 
 const opponentHand = {
-  user: 'Opponent',
+  user: 'opponent',
   cards: [
     cards[randomCards[0]],
     cards[randomCards[1]],
@@ -20,7 +21,7 @@ const opponentHand = {
 }
 
 const playerHand = {
-  user: 'Player',
+  user: 'player',
   cards: [
     cards[randomCards[5]],
     cards[randomCards[6]],
@@ -34,7 +35,13 @@ const INITIAL_SCORE = 5
 
 function Board() {
   const cells = []
-  const [turn, setTurn] = useState('Opponent')
+  const [turn] = useState('Opponent')
+  const [playerCards, setPlayerCards] = useState<CardProps[]>([
+    ...playerHand.cards,
+  ])
+  const [fieldPlacements, setFieldPlacements] = useState<
+    Record<string, CardProps>
+  >({})
 
   const {
     selectedCardIndex,
@@ -42,6 +49,7 @@ function Board() {
     setSelectedCardIndex,
     setIsCardSelected,
     selectedCell,
+    setSelectedCell,
   } = useGameStateStore()
 
   for (let i = 0; i < 3; i++) {
@@ -54,33 +62,69 @@ function Board() {
 
   const handleKeyDown = (e: KeyboardEvent) => {
     // Handle navigating cards
+    const maxHandIndex = Math.max(0, playerCards.length - 1)
+
     if (e.key === 'ArrowUp' && !isCardSelected) {
       setSelectedCardIndex(Math.max(0, selectedCardIndex - 1))
     } else if (e.key === 'ArrowDown' && !isCardSelected) {
-      setSelectedCardIndex(Math.min(4, selectedCardIndex + 1))
+      setSelectedCardIndex(Math.min(maxHandIndex, selectedCardIndex + 1))
     }
 
-    // Handle selecting a card
+    // Handle navigating field
+    if (isCardSelected) {
+      const { row, col } = selectedCell || { row: 1, col: 1 }
+
+      let newRow = row
+      let newCol = col
+
+      if (e.key === 'ArrowUp') {
+        newRow = Math.max(0, row - 1)
+      } else if (e.key === 'ArrowDown') {
+        newRow = Math.min(2, row + 1)
+      } else if (e.key === 'ArrowLeft') {
+        newCol = Math.max(0, col - 1)
+      } else if (e.key === 'ArrowRight') {
+        newCol = Math.min(2, col + 1)
+      }
+
+      setSelectedCell({ row: newRow, col: newCol })
+    }
+
+    // Handle placing a card
     if (e.key === 'Enter') {
       if (!isCardSelected) {
-        console.log(
-          `Selected card: ${playerHand.cards[selectedCardIndex].name}`,
-        )
+        const card = playerCards[selectedCardIndex]
+        if (!card) return
+        console.log(`Selected card: ${card.name}`)
         setIsCardSelected(true)
       } else {
-        // @todo add logic to place the card here, for now just log the selected cell
-        console.log(
-          `I want to place this card on tile ${selectedCell?.row}, ${selectedCell?.col}`,
-        )
-        setIsCardSelected(false) // Deselect the card after "placing" it
-        // @todo, then it will become the opponent's turn, where a random card will be chosen and placed on a random tile
+        const row = selectedCell?.row
+        const col = selectedCell?.col
+        if (row === undefined || col === undefined) return
+
+        const cellKey = `${row}-${col}`
+        if (fieldPlacements[cellKey]) {
+          console.log(`Cell ${cellKey} is already occupied`)
+          return
+        }
+
+        const card = playerCards[selectedCardIndex]
+        if (!card) return
+
+        setFieldPlacements((prev) => ({ ...prev, [cellKey]: card }))
+        setPlayerCards((prev) => prev.filter((_, i) => i !== selectedCardIndex))
+        const nextMaxIndex = Math.max(0, playerCards.length - 2)
+        setSelectedCardIndex(Math.min(selectedCardIndex, nextMaxIndex))
+        setIsCardSelected(false)
+        // @todo: opponent turn — random card on random tile
       }
     }
 
     if (e.key === 'Escape' && isCardSelected) {
-      console.log(
-        `${playerHand.cards[selectedCardIndex].name} has been deselected`,
-      )
+      const card = playerCards[selectedCardIndex]
+      if (card) {
+        console.log(`${card.name} has been deselected`)
+      }
       setIsCardSelected(false)
     }
 
@@ -102,15 +146,17 @@ function Board() {
       <Hand
         user={opponentHand.user}
         cards={opponentHand.cards}
-        turn={turn}
         selectedCardIndex={selectedCardIndex}
         score={INITIAL_SCORE}
       />
-      <Field cells={cells} isPlacing={isCardSelected} />
+      <Field
+        cells={cells}
+        isPlacing={isCardSelected}
+        placements={fieldPlacements}
+      />
       <Hand
         user={playerHand.user}
-        cards={playerHand.cards}
-        turn={turn}
+        cards={playerCards}
         selectedCardIndex={selectedCardIndex}
         score={INITIAL_SCORE}
       />

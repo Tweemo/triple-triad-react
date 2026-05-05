@@ -60,7 +60,6 @@ function ScoreNumber({
     >
       {chars.map((value, index) => {
         const char = fontData.chars[value.charCodeAt(0).toString()]
-        console.log(char.width)
 
         if (!char) {
           return (

@@ -1,5 +1,14 @@
 .card {
   position: absolute;
+  
+}
+
+.opponent-card {
+  background: linear-gradient(180deg, #D6ACC2, #652F3B);
+}
+
+.player-card {
+  background: linear-gradient(180deg, #B4CAE6, #384D80);
 }
 
 .ranks {
