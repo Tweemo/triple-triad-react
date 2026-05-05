@@ -58,7 +58,9 @@ function Board() {
     }
   }
 
-  const audioRef = useRef<HTMLAudioElement>(null)
+  const selectAudioRef = useRef<HTMLAudioElement>(null)
+  const cardAudioRef = useRef<HTMLAudioElement>(null)
+  const forbiddenAudioRef = useRef<HTMLAudioElement>(null)
 
   const handleKeyDown = (e: KeyboardEvent) => {
     // Handle navigating cards
@@ -105,11 +107,17 @@ function Board() {
         const cellKey = `${row}-${col}`
         if (fieldPlacements[cellKey]) {
           console.log(`Cell ${cellKey} is already occupied`)
+          forbiddenAudioRef.current
+            ?.play()
+            .catch((e) => console.error('Audio play failed:', e))
           return
         }
 
         const card = playerCards[selectedCardIndex]
         if (!card) return
+        cardAudioRef.current
+          ?.play()
+          .catch((e) => console.error('Audio play failed:', e))
 
         setFieldPlacements((prev) => ({ ...prev, [cellKey]: card }))
         setPlayerCards((prev) => prev.filter((_, i) => i !== selectedCardIndex))
@@ -129,7 +137,7 @@ function Board() {
     }
 
     // TODO delay in playing the sound, should play even if spammed
-    audioRef.current
+    selectAudioRef.current
       ?.play()
       .catch((e) => console.error('Audio play failed:', e))
   }
@@ -160,7 +168,9 @@ function Board() {
         selectedCardIndex={selectedCardIndex}
         score={INITIAL_SCORE}
       />
-      <audio ref={audioRef} src="/assets/sounds/select.wav" />
+      <audio ref={selectAudioRef} src="/assets/sounds/select.wav" />
+      <audio ref={cardAudioRef} src="/assets/sounds/card.wav" />
+      <audio ref={forbiddenAudioRef} src="/assets/sounds/forbidden.wav" />
     </div>
   )
 }
